@@ -1,0 +1,24 @@
+@import "variables";
+
+.test {
+  color: $red-color;
+}
+
+.navigation {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.hello {
+  font-size: 20px;
+  color: bisque;
+  font-weight: 600;
+}
+
+h1 {
+  color: $red-color;
+}
+
+.search-form {
+  padding: 0 20px;
+}
