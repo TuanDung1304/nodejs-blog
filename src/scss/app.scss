@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .test {
   color: $red-color;
@@ -21,4 +21,11 @@ h1 {
 
 .search-form {
   padding: 0 20px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: auto;
 }

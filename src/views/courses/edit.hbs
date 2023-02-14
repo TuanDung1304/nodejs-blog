@@ -1,0 +1,63 @@
+<div class='mt-4'>
+  <h3>Cập nhật khóa học</h3>
+  <form method='post' action='/courses/{{course._id}}?_method=PUT'>
+    <div class='mb-3'>
+      <label for='name' class='form-label'>Tên khóa học</label>
+      <input
+        type='text'
+        value='{{course.name}}'
+        class='form-control'
+        id='name'
+        name='name'
+      />
+    </div>
+    <div class='mb-3'>
+      <label for='desc' class='form-label'>Mô tả</label>
+      <textarea
+        class='form-control'
+        id='desc'
+        name='desc'
+      >{{course.desc}}</textarea>
+    </div>
+    <div class='mb-3'>
+      <label for='videoId' class='form-label'>Video Id</label>
+      <input
+        type='text'
+        value='{{course.videoId}}'
+        class='form-control'
+        id='videoId'
+        name='videoId'
+      />
+    </div>
+    <div class='mb-3'>
+      <label for='level' class='form-label'>Trình độ:</label>
+      <input
+        type='radio'
+        id='level'
+        name='level'
+        value='Cơ bản'
+        {{setChecked course.level 'Cơ bản'}}
+      />
+      Cơ bản
+      <input
+        type='radio'
+        id='level'
+        name='level'
+        value='Nâng cao'
+        {{setChecked course.level 'Nâng cao'}}
+      />
+      Nâng cao
+    </div>
+    <div class='mb-3'>
+      <label for='slug' class='form-label'>Slug</label>
+      <input
+        type='text'
+        value='{{course.slug}}'
+        class='form-control'
+        id='slug'
+        name='slug'
+      />
+    </div>
+    <button type='submit' class='btn btn-primary'>Lưu lại</button>
+  </form>
+</div>
